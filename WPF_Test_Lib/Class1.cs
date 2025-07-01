@@ -61,5 +61,38 @@ namespace WPF_Test_Lib
 
 
         }
+
+        [Test]
+
+        public void CauLenhSwitch()
+        {
+            int LoaiXe = 1;
+            switch (LoaiXe) 
+            {
+                case 1:
+                    {
+                        Console.WriteLine("Xe đạp");
+                    }
+                    break;
+
+                case 2:
+                    {
+                        Console.WriteLine("Xe máy");
+                    }
+                    break;
+
+                case 3:
+                    {
+                        Console.WriteLine("Ô tô");
+                    }
+                    break;
+
+                default:
+                    {
+                        Console.WriteLine("Lựa chọn không hợp lệ");
+                    }
+                    break;
+            }
+
     }
 }
