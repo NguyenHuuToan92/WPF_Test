@@ -1,9 +1,5 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WPF_Test_Lib
 {
@@ -25,13 +21,13 @@ namespace WPF_Test_Lib
         {
             int a = 21;
             int b = 21;
-            bool c = (a>=b);
+            bool c = (a >= b);
 
             bool d1 = true;
             bool d2 = true;
             bool d3 = !d1;
             Console.WriteLine("C có giá trị là " + d3);
-       
+
         }
 
         [Test]
@@ -39,40 +35,40 @@ namespace WPF_Test_Lib
         public void CauLenhIF()
         {
             int Diem = 100;
-            if (Diem >=85)
+            if (Diem >= 85)
             {
                 Console.WriteLine("Xếp loại giỏi");
 
             }
-            else if (Diem >=70)
+            else if (Diem >= 70)
             {
                 Console.WriteLine("Xếp loại Khá");
             }
-            else if (Diem >=50)
+            else if (Diem >= 50)
 
             {
                 Console.WriteLine("Xếp loại TB");
-            }    
-            
-            else
-            {
-               Console.WriteLine("Xếp loại Yếu");
             }
 
-
+            else
+            {
+                Console.WriteLine("Xếp loại Yếu");
+            }
         }
 
         [Test]
 
         public void CauLenhSwitch()
         {
-            int LoaiXe = 1;
-            switch (LoaiXe) 
+            int LoaiXe = 56;
+
+            switch (LoaiXe)
             {
                 case 1:
                     {
                         Console.WriteLine("Xe đạp");
                     }
+
                     break;
 
                 case 2:
@@ -89,10 +85,39 @@ namespace WPF_Test_Lib
 
                 default:
                     {
-                        Console.WriteLine("Lựa chọn không hợp lệ");
+                        Console.WriteLine("Done");
                     }
                     break;
             }
 
+        }
+
+
+
+
+        [Test]
+
+        public void VonglapFor()
+        {
+            int SoLanLap = 5;
+            for (int i = 1; i <= SoLanLap; i++)
+            {
+                Console.WriteLine("Gửi Email lần thứ " + i);
+            }
+
+        }
+        [Test]
+
+        public void VonglapForEach()
+        {
+            string[] DanhSachTen = { "Toàn", "Tuấn", "Hùng", "Quân", "Tùng" };
+
+            foreach (string Ten in DanhSachTen)
+           
+            {
+                Console.WriteLine("Tên nhân viên: " + Ten);
+            } 
+          
+        }
     }
 }
