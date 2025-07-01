@@ -23,14 +23,43 @@ namespace WPF_Test_Lib
 
         public void TinhCong()
         {
-            int a = 23;
+            int a = 21;
             int b = 21;
-            int c = a%b;
-            Console.WriteLine("C có giá trị là " + c);
+            bool c = (a>=b);
 
+            bool d1 = true;
+            bool d2 = true;
+            bool d3 = !d1;
+            Console.WriteLine("C có giá trị là " + d3);
+       
+        }
+
+        [Test]
+
+        public void CauLenhIF()
+        {
+            int Diem = 100;
+            if (Diem >=85)
+            {
+                Console.WriteLine("Xếp loại giỏi");
+
+            }
+            else if (Diem >=70)
+            {
+                Console.WriteLine("Xếp loại Khá");
+            }
+            else if (Diem >=50)
+
+            {
+                Console.WriteLine("Xếp loại TB");
+            }    
             
+            else
+            {
+               Console.WriteLine("Xếp loại Yếu");
+            }
+
 
         }
-        
     }
 }
