@@ -157,5 +157,42 @@ namespace WPF_Test_Lib
                 }    
             }    
         }
+
+        [Test]
+        public void DoiTuong()
+        {
+            Nguoi MrToan = new Nguoi();
+            MrToan.Name = "Toàn";
+            MrToan.Age = 30;
+            MrToan.Email = "Toannh06@gmail.com";
+            MrToan.Noichuyen();
+
+            Nguoi MrBon = new Nguoi();
+            MrBon.Name = "Bon";
+            MrBon.Age = 10;
+            MrBon.Email = "Bon@gmail.com";
+            MrBon.Noichuyen();
+
+            MrToan.Noichuyen();
+
+            int a = 25;
+            Console.WriteLine("Giá trị của a: " +a);
+            int b=a;
+            b = 15;
+            Console.WriteLine("Giá trị của b: " +b);
+            Console.WriteLine("Giá trị của a: " +a);
+
+        }
+        public class Nguoi
+        {
+            public string Name;
+            public int Age;
+            public string Email;
+            public void Noichuyen()
+            {
+                Console.WriteLine("Xin chào, tôi là " + Name);
+            }
+            
+        }
     }
 }
