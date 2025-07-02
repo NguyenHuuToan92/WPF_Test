@@ -119,5 +119,43 @@ namespace WPF_Test_Lib
             } 
           
         }
+        [Test]
+
+        public void VonglapWhile()
+        {
+           int Count = 0;
+            while (Count < 5)
+            {
+                Console.WriteLine("Đây là vòng lặp While lần thứ: " + Count);
+                Count++;
+            }
+        }
+        [Test]
+
+        public void VonglapDoWhile()
+        {
+            int Count = 5;
+            do
+
+            {
+                Console.WriteLine("Đây là vòng lặp While lần thứ: " + Count);
+                Count++;
+            }
+            while (Count < 5);
+        }
+        [Test]
+
+        public void CuPhapBreak()
+        {
+            int SoLanLap = 5;
+            for (int i = 1; i <= 1000; i++)
+            {
+                Console.WriteLine("Gửi Email lần thứ:" + i);
+                if (i == 10)
+                {
+                    break;
+                }    
+            }    
+        }
     }
 }
