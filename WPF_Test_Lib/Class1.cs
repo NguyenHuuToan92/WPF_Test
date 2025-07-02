@@ -182,6 +182,9 @@ namespace WPF_Test_Lib
             Console.WriteLine("Giá trị của b: " +b);
             Console.WriteLine("Giá trị của a: " +a);
 
+            MrToan = null;
+            MrBon  = null;
+
         }
         public class Nguoi
         {
